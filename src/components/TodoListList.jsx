@@ -33,8 +33,8 @@ const TodoListList = () => {
               key={list.name}
             >
               <Row>
-                <Col md={8}>- {list.name}</Col>
-                <Col md={2}>
+                <Col md={8} xs={8}>- {list.name}</Col>
+                <Col md={2} xs={2}>
                   {list.complete === true ? (
                     <Button
                       variant='success'
@@ -51,7 +51,7 @@ const TodoListList = () => {
                     </Button>
                   )}
                 </Col>
-                <Col md={2}>
+                <Col md={2} xs={2}>
                   <Button
                     variant='dark'
                     onClick={() => handleDelete(list.name)}
